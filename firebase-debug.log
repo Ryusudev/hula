@@ -1,0 +1,54 @@
+[debug] [2025-07-28T16:15:00.915Z] ----------------------------------------------------------------------
+[debug] [2025-07-28T16:15:00.919Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\DELL\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2025-07-28T16:15:00.920Z] CLI Version:   14.11.1
+[debug] [2025-07-28T16:15:00.920Z] Platform:      win32
+[debug] [2025-07-28T16:15:00.920Z] Node Version:  v22.17.1
+[debug] [2025-07-28T16:15:00.921Z] Time:          Mon Jul 28 2025 22:15:00 GMT+0600 (Bangladesh Standard Time)
+[debug] [2025-07-28T16:15:00.921Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-07-28T16:15:00.925Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2025-07-28T16:15:00.984Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-28T16:15:00.985Z] > authorizing via signed-in user (hojaifa190@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\DELL\OneDrive\Desktop\bloodproject2.0
+
+[debug] [2025-07-28T16:15:01.719Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2025-07-28T16:15:01.720Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-07-28T16:15:20.090Z] Checked if tokens are valid: false, expires at: 1753688850084
+[debug] [2025-07-28T16:15:20.090Z] Checked if tokens are valid: false, expires at: 1753688850084
+[debug] [2025-07-28T16:15:20.091Z] > refreshing access token with scopes: []
+[debug] [2025-07-28T16:15:20.094Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-07-28T16:15:20.094Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-07-28T16:15:20.513Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-07-28T16:15:20.514Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-07-28T16:15:20.553Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2025-07-28T16:15:21.361Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2025-07-28T16:15:21.362Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project hula-6ff98 (Hula) 
+[info] 
+=== Hosting Setup
+[debug] [2025-07-28T16:15:24.889Z] Checked if tokens are valid: true, expires at: 1753722919514
+[debug] [2025-07-28T16:15:24.890Z] Checked if tokens are valid: true, expires at: 1753722919514
+[debug] [2025-07-28T16:15:24.890Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/hula-6ff98 [none]
+[debug] [2025-07-28T16:15:25.330Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/hula-6ff98 200
+[debug] [2025-07-28T16:15:25.331Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/hula-6ff98 {"projectId":"hula-6ff98","projectNumber":"699200340389","displayName":"Hula","name":"projects/hula-6ff98","resources":{"hostingSite":"hula-6ff98"},"state":"ACTIVE","etag":"1_5180b803-c1f4-4a64-be71-e773a2014b27"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
