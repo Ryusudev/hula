@@ -1,62 +1,30 @@
-
 <!DOCTYPE html>
 <html>
 <head>
     <title>Blood Donation Finder</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        .hidden { display: none; }
-    </style>
 </head>
 <body>
-    <h1>Blood Donation Helper</h1>
+    <h1>Search for Blood</h1>
+    <form id="searchForm">
+        <input type="text" id="location" placeholder="Enter location">
+        <select id="bloodGroup">
+            <option value="">Select Blood Group</option>
+            <option value="A+">A+</option>
+            <option value="B+">B+</option>
+            <!-- Add all types -->
+        </select>
+        <button type="submit">Search</button>
+    </form>
 
-    <button onclick="showSection('search')">🔍 Search Donor</button>
-    <button onclick="showSection('register')">🩸 Register as Donor</button>
+    <h2>Results:</h2>
+    <div id="results"></div>
 
-    <!-- 🔍 Search Form -->
-    <div id="searchSection">
-        <h2>Search for Blood</h2>
-        <form id="searchForm">
-            <input type="text" id="searchLocation" placeholder="Enter location">
-            <select id="searchBloodGroup">
-                <option value="">Select Blood Group</option>
-                <option value="A+">A+</option>
-                <option value="B+">B+</option>
-                <option value="O+">O+</option>
-                <option value="AB+">AB+</option>
-                <!-- add all -->
-            </select>
-            <button type="submit">Search</button>
-        </form>
-        <h3>Results:</h3>
-        <div id="results"></div>
-    </div>
+    <a href="register.html">Become a Donor</a>
 
-    <!-- 🩸 Registration Form -->
-    <div id="registerSection" class="hidden">
-        <h2>Register as Donor</h2>
-        <form id="donorForm">
-            <input type="text" id="name" placeholder="Your Name" required>
-            <input type="text" id="phone" placeholder="Phone Number" required>
-            <input type="text" id="location" placeholder="Location" required>
-            <select id="bloodGroup">
-                <option value="">Select Blood Group</option>
-                <option value="A+">A+</option>
-                <option value="B+">B+</option>
-                <option value="O+">O+</option>
-                <option value="AB+">AB+</option>
-                <!-- add all -->
-            </select>
-            <button type="submit">Register</button>
-        </form>
-    </div>
-
-    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-firestore-compat.js"></script>
+    <script src="firebase.js"></script>
     <script src="app.js"></script>
-    
-     <script type="module">
+         <script type="module">
           // Import the functions you need from the SDKs you need
           import { initializeApp } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-app.js";
           import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-analytics.js";
